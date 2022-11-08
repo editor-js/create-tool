@@ -8,7 +8,7 @@ module.exports = {
   output: {
     // Define output path and filename
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'VAR_TOOL_NAME.js',
 
     // Define library name
     library: 'VAR_TOOL_NAME',   
