@@ -1,6 +1,6 @@
 {
   "name": "@editorjs/create-tool",
-  "version": "1.0.0",
+  "version": "1.0.0-rc1",
   "main": "index.js",
   "scripts": {
     "run-create": "node ./bin/create-tool.js sampletool",
