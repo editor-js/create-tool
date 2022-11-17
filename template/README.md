@@ -1,18 +1,14 @@
 # VAR_TOOL_NAME Tool for Editor.js
 
-...
-
 ## Installation
 
 Use your package manager to install the package `editorjs-VAR_TOOL_NAME`.
 
-## Configuration
+```
+npm install editorjs-VAR_TOOL_NAME
 
-...
-
-## Data
-
-...
+yarn add editorjs-VAR_TOOL_NAME
+```
 
 ## Links
 
