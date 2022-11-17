@@ -1,0 +1,14 @@
+{
+  "name": "@editorjs/create-tool",
+  "version": "0.0.0-rc1",
+  "main": "index.js",
+  "scripts": {
+    "try-sample": "rm -rf sampletool && node ./bin/create-tool.js sampletool && cd sampletool && npm install && npm run build && npm run example"
+  },
+  "bin": {
+    "create-tool": "./bin/create-tool.js"
+  },
+  "dependencies": {
+    "get-all-files": "^4.1.0"
+  }
+}
