@@ -4,7 +4,7 @@ Single command helper to generate a Tool template.
 
 ## Usage
 
-Use `create` command to generate Tool's starter kit
+Use `create` command to generate Tool's starter kit.
 
 ```
 npm create @editorjs/tool <tool-name>
