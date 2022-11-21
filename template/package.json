@@ -9,6 +9,7 @@
     "example": "open ./example/index.html"
   },
   "devDependencies": {
+    "@codexteam/icons": "^0.0.4",
     "@editorjs/editorjs": "2.25.0",
     "@types/node": "^16.3.3",
     "css-loader": "^6.7.1",

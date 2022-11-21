@@ -3,7 +3,10 @@
  */
 import styles from './index.css';
 
-import ToolboxIcon from './assets/toolbox-icon.svg';
+/**
+ * Import icons
+ */
+import { IconStar } from '@codexteam/icons';
 
 import { VAR_TOOL_NAMEData, VAR_TOOL_NAMEConfig } from './types';
 import { API, BlockAPI, BlockTool } from '@editorjs/editorjs';
@@ -203,7 +206,7 @@ export default class VAR_TOOL_NAME implements BlockTool {
   static get toolbox() {
     return {
       title: 'VAR_TOOL_NAME',
-      icon: ToolboxIcon,
+      icon: IconStar,
     };
   }
 
