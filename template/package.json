@@ -3,7 +3,6 @@
   "description": "VAR_TOOL_NAME Tool for Editor.js",
   "version": "1.0.0",
   "main": "dist/bundle.js",
-  "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development --watch",
