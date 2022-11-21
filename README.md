@@ -1,3 +1,5 @@
+🚧 Development in progress 🚧
+
 # Editor.js Tool — starter kit package
 
 Single command helper to generate a Tool template.
