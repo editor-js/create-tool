@@ -1,7 +1,7 @@
 {
   "name": "editorjs-VAR_TOOL_NAME",
   "description": "VAR_TOOL_NAME Tool for Editor.js",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/bundle.js",
   "license": "MIT",
   "scripts": {
