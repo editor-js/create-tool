@@ -3,7 +3,7 @@
   "version": "0.1.0-rc1",
   "main": "index.js",
   "scripts": {
-    "try-sample": "rm -rf sampletool && node ./bin/create-tool.js sampletool && cd sampletool && npm install && npm run build && npm run example"
+    "try-sample": "rm -rf sampletool && node ./bin/create-tool.js sampletool && cd sampletool && npm install && npm run build"
   },
   "bin": {
     "create-tool": "./bin/create-tool.js"

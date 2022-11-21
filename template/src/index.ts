@@ -1,13 +1,16 @@
 /**
  * Import styles library
  */
-import styles from './index.css';
+import styles from './index.module.css';
 
 /**
  * Import icons
  */
 import { IconStar } from '@codexteam/icons';
 
+/**
+ * Import types
+ */
 import { VAR_TOOL_NAMEData, VAR_TOOL_NAMEConfig } from './types';
 import { API, BlockAPI, BlockTool } from '@editorjs/editorjs';
 
