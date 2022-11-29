@@ -14,9 +14,9 @@ npm create @editorjs/tool <tool-name>
 
 ## Development
 
-New project files will be used from `template` folder.
+New project files will be used from `template` folder. You can work in this folder as in generated project: upgrade dependencies, add new files, run build and dev commands.
 
-Also we have variables in templates that will be replaced with user's input:
+In templates there is a variable that will be replaced with user's input:
 
 - `VAR_TOOL_NAME` — tool name
 

@@ -2,9 +2,7 @@
 <head>
   <title>Editor.js example page</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
-
-  <script src="../dist/VAR_TOOL_NAME.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.26.0-rc.7"></script>
 
   <style>
     body {
@@ -18,7 +16,9 @@
   <button id="save-button">Save</button>
   <pre id="output"></pre>
 
-  <script>
+  <script type="module">
+    import VAR_TOOL_NAME from './src/index.ts';
+
     const editor = new EditorJS({
       tools: {
         VAR_TOOL_NAME: {
