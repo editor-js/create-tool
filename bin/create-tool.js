@@ -2,7 +2,6 @@
 
 const fs = require('fs');
 const path = require('path');
-const { execSync } = require('child_process');
 const getAllFiles = require('get-all-files');
 
 /**
@@ -31,7 +30,7 @@ files.forEach(file => {
   console.log(`Copying ${relativePath}`);
 
   /**
-   * Get file content and replase VAR_TOOL_NAME with tool name
+   * Get file content and replace VAR_TOOL_NAME with tool name
    */
   const content = fs.readFileSync(file, 'utf-8');
   const replacedContent = content.replace(/VAR_TOOL_NAME/g, toolName);

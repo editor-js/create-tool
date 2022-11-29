@@ -20,10 +20,42 @@ In templates there is a variable that will be replaced with user's input:
 
 - `VAR_TOOL_NAME` — tool name
 
-### Testing
+### Local testing
 
-To test the package locally, run:
+To test the package locally, you have to create a symlink to the global `node_modules` folder. Use the package to generate a new tool. And then you need to unlink local package.
+
+#### Linking
+
+Run the following command in the root of this package repository:
 
 ```
-npm run try-sample
+npm link
+```
+
+In the folder where you want to create a new tool, link the local package:
+
+```
+npm link @editorjs/create-tool
+```
+
+#### Usage
+
+Use this tool as usual:
+
+```
+npm create @editorjs/tool <tool-name>
+```
+
+#### Unlinking
+
+To unlink the local package run the following in tool's parent folder where I had to link it earlier:
+
+```
+npm unlink @editorjs/create-tool
+```
+
+And then unlink the package in the root of this package repository:
+
+```
+npm unlink @editorjs/create-tool
 ```

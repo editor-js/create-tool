@@ -1,10 +1,8 @@
 {
   "name": "@editorjs/create-tool",
+  "description": "Editor.js Tool single command generator",
   "version": "0.1.0-rc1",
-  "main": "index.js",
-  "scripts": {
-    "try-sample": "rm -rf sample && node ./bin/create-tool.js sample && cd sample && npm install && npm run build && npm run example"
-  },
+  "license": "MIT",
   "bin": {
     "create-tool": "./bin/create-tool.js"
   },
