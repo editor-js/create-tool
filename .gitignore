@@ -1,5 +1,9 @@
 .idea
+.vscode
 .DS_Store
 node_modules
 *.log
-sample
+
+template/yarn.lock
+
+package-lock.json

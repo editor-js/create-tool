@@ -2,10 +2,6 @@
 <head>
   <title>Editor.js example page</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
-
-  <script src="../dist/VAR_TOOL_NAME.js"></script>
-
   <style>
     body {
       font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -18,7 +14,10 @@
   <button id="save-button">Save</button>
   <pre id="output"></pre>
 
-  <script>
+  <script type="module">
+    import EditorJS from '@editorjs/editorjs';
+    import VAR_TOOL_NAME from './src/index.ts';
+
     const editor = new EditorJS({
       tools: {
         VAR_TOOL_NAME: {

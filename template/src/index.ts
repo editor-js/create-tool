@@ -1,10 +1,16 @@
 /**
  * Import styles library
  */
-import styles from './index.css';
+import styles from './index.module.css';
 
-import ToolboxIcon from './assets/toolbox-icon.svg';
+/**
+ * Import icons
+ */
+import { IconStar } from '@codexteam/icons';
 
+/**
+ * Import types
+ */
 import { VAR_TOOL_NAMEData, VAR_TOOL_NAMEConfig } from './types';
 import { API, BlockAPI, BlockTool } from '@editorjs/editorjs';
 
@@ -155,26 +161,24 @@ export default class VAR_TOOL_NAME implements BlockTool {
    * @returns {tags?: string[], files?: { mimeTypes: string[], extensions: string[] }, patterns?: { [string]: RegEx }}
    */ 
   // static get pasteConfig() {
-  //   // return {
-  //   //   /**
-  //   //    * Paste HTML into Editor
-  //   //    */
-  //   //   tags: [ 'img' ],
-  //   //
-  //   //   /**
-  //   //    * Paste URL of image into the Editor
-  //   //    */
-  //   //   patterns: {
-  //   //     image: /https?:\/\/\S+\.(gif|jpe?g|tiff|png)$/i,
-  //   //   },
-  //   // 
-  //   //   /**
-  //   //    * Drag n drop file from into the Editor
-  //   //    */
-  //   //   files: {
-  //   //     mimeTypes: [ 'image/*' ],
-  //   //   },
-  //   // };
+  //   return {
+  //     /**
+  //      * Paste HTML into Editor
+  //      */
+  //     tags: [],
+    
+  //     /**
+  //      * Paste URL of media into the Editor
+  //      */
+  //     patterns: {},
+    
+  //     /**
+  //      * Drag n drop file from into the Editor
+  //      */
+  //     files: {
+  //       mimeTypes: [ ],
+  //     },
+  //   };
   // }
 
   /**
@@ -184,13 +188,7 @@ export default class VAR_TOOL_NAME implements BlockTool {
    * @returns {{[string]: boolean|object}} - Sanitizer rules
    */
   // static get sanitize() {
-  //   // return {
-  //   //   a: {
-  //   //     href: true,
-  //   //     target: '_blank',
-  //   //     rel: 'nofollow',
-  //   //   },
-  //   // };
+  //   return {};
   // } 
 
   /**
@@ -203,7 +201,7 @@ export default class VAR_TOOL_NAME implements BlockTool {
   static get toolbox() {
     return {
       title: 'VAR_TOOL_NAME',
-      icon: ToolboxIcon,
+      icon: IconStar,
     };
   }
 
