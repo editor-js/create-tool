@@ -14,8 +14,6 @@ export default ({ command }) => {
           dir: 'dist',
           entryFileNames: '[name].js',
         },
-
-        preserveEntrySignatures: 'strict',
       },
     },
   };
