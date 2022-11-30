@@ -2,7 +2,8 @@
   "name": "editorjs-VAR_TOOL_NAME",
   "description": "VAR_TOOL_NAME Tool for Editor.js",
   "version": "1.0.0",
-  "main": "dist/VAR_TOOL_NAME.js",
+  "main": "dist/VAR_TOOL_NAME.umd.js",
+  "module": "dist/VAR_TOOL_NAME.mjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build"

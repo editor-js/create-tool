@@ -6,8 +6,8 @@ export default {
     lib: {
       entry: path.resolve(__dirname, 'src', 'index.ts'),
       name: 'VAR_TOOL_NAME',
-      formats: ['umd'],
-      fileName: () => 'VAR_TOOL_NAME.js'
+      formats: ['umd', 'es'],
+      fileName: 'VAR_TOOL_NAME'
     },
   },
 

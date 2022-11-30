@@ -10,6 +10,7 @@ Use `create` command to generate Tool's starter kit.
 
 ```
 npm create @editorjs/tool <tool-name>
+yarn create @editorjs/tool <tool-name>
 ```
 
 ## Development
@@ -30,12 +31,14 @@ Run the following command in the root of this package repository:
 
 ```
 npm link
+yarn link
 ```
 
 In the folder where you want to create a new tool, link the local package:
 
 ```
 npm link @editorjs/create-tool
+yarn link @editorjs/create-tool
 ```
 
 #### Usage
@@ -44,6 +47,7 @@ Use this tool as usual:
 
 ```
 npm create @editorjs/tool <tool-name>
+yarn create @editorjs/tool <tool-name>
 ```
 
 #### Unlinking
@@ -52,10 +56,12 @@ To unlink the local package run the following in tool's parent folder where I ha
 
 ```
 npm unlink @editorjs/create-tool
+yarn unlink @editorjs/create-tool
 ```
 
 And then unlink the package in the root of this package repository:
 
 ```
 npm unlink @editorjs/create-tool
+yarn unlink @editorjs/create-tool
 ```
