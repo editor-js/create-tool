@@ -2,8 +2,6 @@
 <head>
   <title>Editor.js example page</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@2.26.0-rc.7"></script>
-
   <style>
     body {
       font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -17,6 +15,7 @@
   <pre id="output"></pre>
 
   <script type="module">
+    import EditorJS from '@editorjs/editorjs';
     import VAR_TOOL_NAME from './src/index.ts';
 
     const editor = new EditorJS({
