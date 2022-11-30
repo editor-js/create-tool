@@ -2,7 +2,7 @@
   "name": "editorjs-VAR_TOOL_NAME",
   "description": "VAR_TOOL_NAME Tool for Editor.js",
   "version": "1.0.0",
-  "main": "dist/bundle.js",
+  "main": "dist/VAR_TOOL_NAME.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -13,6 +13,7 @@
     "@types/node": "^16.3.3",
     "ts-loader": "^9.1.0",
     "typescript": "^4.2.4",
-    "vite": "^3.1.0"
+    "vite": "^3.1.0",
+    "vite-plugin-css-injected-by-js": "^2.1.1"
   }
 }
