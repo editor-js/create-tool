@@ -3,8 +3,8 @@ name: Publish package to NPM
 on:
   push:
     branches:
-      - master
       - main
+      - master
 
 jobs:
   publish:
@@ -13,12 +13,23 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
+          node-version: 18
+
       - run: yarn
-      - run: yarn publish --access=public
+      - run: yarn publish --access=public --tag=next
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Get package info
+        id: package
+        uses: codex-team/action-nodejs-package-info@v1.1    
+
+      - name: Add LATEST tag for the published package if this is not a -rc version
+        if: steps.package.outputs.is-release-candidate == false
+        run: npm dist-tag add ${{ steps.package.outputs.name }}@${{ steps.package.outputs.version }} latest
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} 
+
   notify:
     needs: publish
     runs-on: ubuntu-latest
@@ -30,7 +41,7 @@ jobs:
       - name: Send a message
         uses: codex-team/action-codexbot-notify@v1
         with:
-          webhook: ${{ secrets.CODEX_BOT_NOTIFY_EDITORJS_PUBLIC_CHAT }}
+          webhook: ${{ secrets.CODEX_BOT_WEBHOOK_FRONTEND }}
           message: '📦 [${{ steps.package.outputs.name }}](${{ steps.package.outputs.npmjs-link }}) ${{ steps.package.outputs.version }} was published'
           parse_mode: 'markdown'
           disable_web_page_preview: true
