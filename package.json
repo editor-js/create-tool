@@ -1,7 +1,7 @@
 {
   "name": "@editorjs/create-tool",
   "description": "Editor.js Tool single command generator",
-  "version": "0.1.0-rc.0",
+  "version": "0.1.1-rc.0",
   "license": "MIT",
   "bin": {
     "create-tool": "./bin/create-tool.js"
