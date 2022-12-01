@@ -1,7 +1,0 @@
-.github/
-.idea/
-src/
-index.html
-tsconfig.json
-vite.config.js
-yarn.lock
