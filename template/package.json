@@ -9,7 +9,7 @@
     "build": "vite build"
   },
   "devDependencies": {
-    "@codexteam/icons": "^0.2.0",
+    "@codexteam/icons": "^0.3.0",
     "@editorjs/editorjs": "^2.26.4",
     "@types/node": "^18.11.16",
     "ts-loader": "^9.1.0",
