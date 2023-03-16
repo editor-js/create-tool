@@ -1,4 +1,4 @@
-🚧 Development in progress 🚧
+
 
 # Editor.js Tool — starter kit package
 
