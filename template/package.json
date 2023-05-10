@@ -11,7 +11,7 @@
   "devDependencies": {
     "@codexteam/icons": "^0.2.0",
     "@editorjs/editorjs": "^2.26.4",
-    "@types/node": "^18.11.16",
+    "@types/node": "^20.1.2",
     "ts-loader": "^9.1.0",
     "typescript": "^4.2.4",
     "vite": "^4.0.1",
